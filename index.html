@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Alere | Join the Waitlist!</title>
+	<link rel="icon" type="image/svg+xml" href="logo.svg" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+		body {
+			font-family: "Lora", serif;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			filter: blur(4rem);
+			z-index: 0;
+			pointer-events: none;
+		}
+
+		@keyframes fadeInPath {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		#logo-svg path {
+			opacity: 0;
+			animation: fadeInPath 1.2s ease-out forwards;
+			z-index: 99;
+		}
+
+		#logo-svg path:nth-child(5) {
+			animation-delay: 0.3s;
+		}
+
+		#logo-svg path:nth-child(2) {
+			animation-delay: 0.6s;
+		}
+
+		#logo-svg path:nth-child(3) {
+			animation-delay: 0.9s;
+		}
+
+		#logo-svg path:nth-child(1) {
+			animation-delay: 1.2s;
+		}
+
+		#logo-svg path:nth-child(4) {
+			animation-delay: 1.5s;
+		}
+
+		input[type="email"]:focus,
+		input[type="email"]::placeholder {
+			color: black;
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body class="w-screen h-screen flex items-center justify-center p-4">
+	<canvas id="canvas"></canvas>
+
+	<div class="container rounded-2xl p-8 w-[50vw] max-w-2xl z-10 flex flex-col gap-5 items-center justify-center">
+		<div class="flex gap-4 items-center justify-center my-4 mt-6">
+			<svg id="logo-svg" version="1.1" width="100" height="65" viewBox="0 0 900.13001 585.83527"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g transform="translate(-89.787507,-246.92968)">
+					<path style="fill: #000000"
+						d="m 597.0115,787.20857 c 1.36867,-1.69269 5.90528,-7.26958 10.08134,-12.39309 52.94705,-64.95954 83.84398,-157.70347 83.8904,-251.81548 0.0226,-45.89362 -6.3619,-88.46866 -19.70378,-131.39408 l -3.69687,-11.89409 3.45871,-2.94416 c 6.82875,-5.81287 28.71231,-19.69284 41.9587,-26.61291 26.55468,-13.87249 56.97219,-23.90094 81.09318,-26.73589 l 5.5546,-0.65284 3.2326,8.86699 c 4.81794,13.21555 9.912,31.35716 12.5984,44.86698 13.83248,69.56327 6.79154,143.39787 -20.16627,211.47293 -28.95878,73.12802 -76.10847,132.35073 -136.98783,172.0646 C 641.21316,771.2 614.20206,784.186 597.0115,789.51478 l -2.48851,0.77139 z" />
+					<path style="fill: #000000"
+						d="m 473.5,786.40672 c -24.27483,-9.15428 -55.84603,-27.4378 -78.64157,-45.54291 -19.86725,-15.77936 -44.00915,-40.89055 -60.7039,-63.14115 C 312.33891,648.647 291.66854,609.33468 279.35438,573.5 264.31229,529.72695 257.86243,491.75142 257.86929,447 c 0.007,-42.41902 5.68269,-76.50551 18.95604,-113.83432 l 3.67467,-10.33432 5,0.63588 c 37.69013,4.79328 81.18826,23.08431 118.60337,49.8729 l 8.60337,6.15986 -1.89127,5.5 c -19.23025,55.92365 -26.15759,128.58909 -18.25607,191.5 9.84926,78.41855 41.50129,153.7889 86.17779,205.208 3.44454,3.9644 6.26281,7.4519 6.26281,7.75 0,1.00894 -2.47397,0.35253 -11.5,-3.05128 z" />
+					<path style="fill: #000000"
+						d="M 528.70626,787.23005 C 505.67868,766.47177 487.30023,742.61699 468.61459,709.23251 445.27986,667.54178 429.62696,616.95919 423.82679,564.5 c -1.76425,-15.95653 -1.75247,-70.21798 0.0184,-85 3.54601,-29.59904 7.74332,-50.29151 15.23214,-75.09366 18.20862,-60.30487 51.11154,-113.4614 93.21888,-150.60032 l 7.79625,-6.87634 3.20375,2.25453 c 5.40005,3.8001 31.89635,30.8096 39.05925,39.81579 55.86824,70.2452 83.47901,168.35687 75.13964,267 -7.04931,83.38359 -38.84742,159.51044 -90.01412,215.5 -7.14,7.81299 -25.25343,24.56558 -27.27955,25.23005 -0.38581,0.12653 -5.55865,-4.14847 -11.49521,-9.5 z" />
+					<path style="fill: #000000"
+						d="m 644.5,832.00992 c -17.47225,-1.8706 -45.54415,-7.33074 -45.4652,-8.84324 0.0191,-0.36667 4.63164,-2.17396 10.25,-4.01619 C 695.96121,790.72974 775.0454,714.44238 817.8098,618 c 14.83186,-33.44884 25.75686,-69.4222 31.16859,-102.63055 l 1.16202,-7.13055 3.67979,-0.60844 c 7.4264,-1.22794 45.0227,-0.63752 56.87858,0.89323 22.4962,2.90455 43.9709,8.41933 62.71186,16.10463 6.09915,2.50114 12.37592,5.07047 13.94837,5.70961 2.83699,1.15312 2.85412,1.21216 2.22276,7.66207 -0.34994,3.575 -1.55536,11.675 -2.67871,18 -15.27005,85.97772 -66.25584,165.77189 -139.09701,217.69066 -41.82597,29.81216 -88.45815,48.89223 -137.80215,56.38328 -15.2178,2.31025 -51.88557,3.39398 -65.5039,1.93598 z" />
+					<path style="fill: #000000"
+						d="m 389.5,832.41556 c -1.65,-0.22808 -7.275,-0.89962 -12.5,-1.49231 -32.73055,-3.71274 -68.20897,-14.4796 -99.57064,-30.21732 C 193.63353,758.65601 131.32123,685.50291 102.63358,595.5 97.276884,578.69422 91.980024,553.85562 90.474649,538.48305 l -0.687142,-7.01695 10.270353,-4.34337 c 23.86735,-10.0936 43.91522,-15.4769 69.41972,-18.64076 11.93037,-1.47998 49.44885,-2.05104 56.63724,-0.86206 l 3.61482,0.5979 1.67439,10.1411 c 2.69754,16.33798 9.1149,41.38915 15.48066,60.43121 34.81316,104.13753 107.17116,188.97965 195.71888,229.48677 9.54316,4.36563 28.68339,11.73534 37.39643,14.39904 1.33333,0.40762 1.33333,0.55105 0,1.29085 -2.0357,1.12952 -18.18217,4.53965 -31,6.5472 -9.97801,1.56276 -52.19116,2.91187 -59.5,1.90158 z" />
+				</g>
+			</svg>
+			<span id="typing-text" class="text-[5rem] leading-none font-bold"
+				style="font-family: &quot;Judson&quot;, serif">
+				<span class="text-transparent transition-colors duration-300">A</span><span
+					class="text-transparent transition-colors duration-300">l</span><span
+					class="text-transparent transition-colors duration-300">e</span><span
+					class="text-transparent transition-colors duration-300">r</span><span
+					class="text-transparent transition-colors duration-300">e</span>
+			</span>
+		</div>
+
+		<div>
+			<p class="text-2xl font-normal text-center">
+				Helping those with health needs <br />on clear food product selection
+			</p>
+		</div>
+
+		<p class="text-xl font-normal mb-4 text-center">
+			Coming soon to
+			<span>
+				<img src="app-store-fill.svg" alt="App Store Badge" class="h-8 mx-2 inline-block" />
+			</span>
+			&
+			<span>
+				<img src="play-store-fill.svg" alt="Google Play Badge" class="h-8 mx-2 inline-block" />
+			</span>
+		</p>
+
+		<form id="waitlist-form" class="flex flex-col gap-4 w-[90%]">
+			<input type="email" id="email" name="email" placeholder="Enter your email" required
+				class="p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent" />
+			<button type="submit"
+				class="bg-black font-bold text-white p-4 rounded-md transition-all disabled:opacity-50 border-2 border-transparent hover:bg-white hover:text-black hover:border-black">
+				Join Waitlist
+			</button>
+		</form>
+
+		<p id="message" class="text-xl min-h-[28px] font-semibold text-black text-center mb-4">
+			&nbsp;
+		</p>
+	</div>
+
+	<script>
+		const canvas = document.getElementById("canvas")
+		const ctx = canvas.getContext("2d")
+
+		canvas.width = window.innerWidth
+		canvas.height = window.innerHeight
+
+		const colors = [
+			{ r: 150, g: 220, b: 225 },
+			{ r: 130, g: 190, b: 230 },
+			{ r: 190, g: 150, b: 230 },
+			{ r: 210, g: 170, b: 240 },
+			{ r: 120, g: 210, b: 240 },
+		]
+
+		class Splash {
+			constructor() {
+				this.x = Math.random() * canvas.width
+				this.y = Math.random() * canvas.height
+				this.baseRadius = Math.random() * 200 + 150
+				this.vx = (Math.random() - 0.5) * 0.5
+				this.vy = (Math.random() - 0.5) * 0.5
+				this.color = colors[Math.floor(Math.random() * colors.length)]
+				this.opacity = Math.random() * 0.5 + 0.35
+				this.pulseSpeed = Math.random() * 0.01 + 0.005
+				this.pulsePhase = Math.random() * Math.PI * 2
+
+				this.generateShape()
+			}
+
+			generateShape() {
+				const numPoints = Math.floor(Math.random() * 8) + 6
+				this.shapePoints = []
+
+				for (let i = 0; i < numPoints; i++) {
+					const angle = (i / numPoints) * Math.PI * 2
+					const variance = Math.random() * 0.4 + 0.6
+					const distance = this.baseRadius * variance
+
+					this.shapePoints.push({
+						angle: angle,
+						distance: distance,
+						offsetPhase: Math.random() * Math.PI * 2,
+						offsetSpeed: Math.random() * 0.02 + 0.005,
+					})
+				}
+			}
+
+			update() {
+				this.x += this.vx
+				this.y += this.vy
+
+				if (this.x < -this.baseRadius) this.x = canvas.width + this.baseRadius
+				if (this.x > canvas.width + this.baseRadius) this.x = -this.baseRadius
+				if (this.y < -this.baseRadius)
+					this.y = canvas.height + this.baseRadius
+				if (this.y > canvas.height + this.baseRadius)
+					this.y = -this.baseRadius
+
+				this.pulsePhase += this.pulseSpeed
+			}
+
+			draw() {
+				const pulseFactor = Math.sin(this.pulsePhase) * 0.2 + 1
+
+				ctx.beginPath()
+
+				this.shapePoints.forEach((point, index) => {
+					point.offsetPhase += point.offsetSpeed
+					const offset = Math.sin(point.offsetPhase) * 15
+
+					const distance = point.distance * pulseFactor + offset
+					const px = this.x + Math.cos(point.angle) * distance
+					const py = this.y + Math.sin(point.angle) * distance
+
+					if (index === 0) {
+						ctx.moveTo(px, py)
+					} else {
+						ctx.lineTo(px, py)
+					}
+				})
+
+				ctx.closePath()
+
+				const gradient = ctx.createRadialGradient(
+					this.x,
+					this.y,
+					0,
+					this.x,
+					this.y,
+					this.baseRadius * 1.5,
+				)
+
+				gradient.addColorStop(
+					0,
+					`rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.opacity})`,
+				)
+				gradient.addColorStop(
+					1,
+					`rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0)`,
+				)
+
+				ctx.fillStyle = gradient
+				ctx.fill()
+			}
+		}
+
+		const splashes = []
+		for (let i = 0; i < 12; i++) {
+			splashes.push(new Splash())
+		}
+
+		function animate() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+			splashes.forEach((splash) => {
+				splash.update()
+				splash.draw()
+			})
+
+			requestAnimationFrame(animate)
+		}
+
+		window.addEventListener("resize", () => {
+			canvas.width = window.innerWidth
+			canvas.height = window.innerHeight
+		})
+
+		animate()
+
+		// Letter reveal animation with initial delay
+		const typingText = document.getElementById("typing-text")
+		const letters = typingText.querySelectorAll("span")
+
+		letters.forEach((letter, index) => {
+			setTimeout(
+				() => {
+					letter.classList.remove("text-transparent")
+					letter.classList.add("text-black")
+				},
+				300 + index * 300,
+			)
+		})
+
+		const form = document.getElementById("waitlist-form")
+		const messageEl = document.getElementById("message")
+		const button = form.querySelector('button[type="submit"]')
+
+		form.addEventListener("submit", async (e) => {
+			e.preventDefault()
+			const email = document.getElementById("email").value
+
+			messageEl.textContent = ""
+			messageEl.classList.remove("text-transparent")
+
+			button.disabled = true
+			button.textContent = "Joining..."
+
+			try {
+				const response = await fetch("/waitlist", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ email: email }),
+				})
+
+				const data = await response.json()
+
+				if (response.ok) {
+					messageEl.textContent = data.message
+					form.reset()
+				} else {
+					messageEl.textContent = data.error || "An error occurred."
+				}
+			} catch (err) {
+				messageEl.textContent = "Network error. Please try again."
+			} finally {
+				button.disabled = false
+				button.textContent = "Join Waitlist"
+			}
+		})
+	</script>
+</body>
+
+</html>
