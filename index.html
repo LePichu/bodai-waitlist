@@ -4,8 +4,28 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Alere | Join the Waitlist!</title>
+	<title>Olu | Join the Waitlist!</title>
 	<link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+	<!-- HTML Meta Tags -->
+	<title>Olu | Join the Waitlist!</title>
+	<meta name="description" content="Helping those with health needs on clear food product selection.">
+
+	<meta property="og:url" content="https://olu.deno.dev/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Olu | Join the Waitlist!">
+	<meta property="og:description" content="Helping those with health needs on clear food product selection.">
+	<meta property="og:image"
+		content="https://olu.deno.dev/alere_opengraph_square.png">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="olu.deno.dev">
+	<meta property="twitter:url" content="https://olu.deno.dev/">
+	<meta name="twitter:title" content="Olu | Join the Waitlist!">
+	<meta name="twitter:description" content="Helping those with health needs on clear food product selection.">
+	<meta name="twitter:image"
+		content="https://olu.deno.dev/alere_opengraph_square.png">
+
 	<script src="https://cdn.tailwindcss.com"></script>
 	<style>
 		@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
@@ -93,11 +113,9 @@
 			</svg>
 			<span id="typing-text" class="text-[5rem] leading-none font-bold"
 				style="font-family: &quot;Judson&quot;, serif">
-				<span class="text-transparent transition-colors duration-300">A</span><span
+				<span class="text-transparent transition-colors duration-300">O</span><span
 					class="text-transparent transition-colors duration-300">l</span><span
-					class="text-transparent transition-colors duration-300">e</span><span
-					class="text-transparent transition-colors duration-300">r</span><span
-					class="text-transparent transition-colors duration-300">e</span>
+					class="text-transparent transition-colors duration-300">u</span>
 			</span>
 		</div>
 
@@ -152,11 +170,11 @@
 				this.x = Math.random() * canvas.width
 				this.y = Math.random() * canvas.height
 				this.baseRadius = Math.random() * 200 + 150
-				this.vx = (Math.random() - 0.5) * 0.5
-				this.vy = (Math.random() - 0.5) * 0.5
+				this.vx = (Math.random() - 0.5) * 1.5
+				this.vy = (Math.random() - 0.5) * 1.5
 				this.color = colors[Math.floor(Math.random() * colors.length)]
 				this.opacity = Math.random() * 0.5 + 0.35
-				this.pulseSpeed = Math.random() * 0.01 + 0.005
+				this.pulseSpeed = Math.random() * 0.03 + 0.015
 				this.pulsePhase = Math.random() * Math.PI * 2
 
 				this.generateShape()
@@ -262,7 +280,6 @@
 
 		animate()
 
-		// Letter reveal animation with initial delay
 		const typingText = document.getElementById("typing-text")
 		const letters = typingText.querySelectorAll("span")
 
@@ -272,7 +289,7 @@
 					letter.classList.remove("text-transparent")
 					letter.classList.add("text-black")
 				},
-				300 + index * 300,
+				300 + index * 700,
 			)
 		})
 
