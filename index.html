@@ -303,6 +303,12 @@
 			e.preventDefault()
 			const email = document.getElementById("email").value
 
+			if (!email) {
+				messageEl.textContent = "Please enter a valid email address."
+				messageEl.classList.remove("text-transparent")
+				return
+			}
+
 			messageEl.textContent = ""
 			messageEl.classList.remove("text-transparent")
 
