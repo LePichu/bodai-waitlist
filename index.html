@@ -4,27 +4,25 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Olu | Join the Waitlist!</title>
+	<title>Alere | Join the Waitlist!</title>
 	<link rel="icon" type="image/svg+xml" href="logo.svg" />
 
 	<!-- HTML Meta Tags -->
-	<title>Olu | Join the Waitlist!</title>
+	<title>Alere | Join the Waitlist!</title>
 	<meta name="description" content="Helping those with health needs on clear food product selection.">
 
-	<meta property="og:url" content="https://olu.deno.dev/">
+	<meta property="og:url" content="https://alere.deno.dev/">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Olu | Join the Waitlist!">
+	<meta property="og:title" content="Alere | Join the Waitlist!">
 	<meta property="og:description" content="Helping those with health needs on clear food product selection.">
-	<meta property="og:image"
-		content="https://olu.deno.dev/alere_opengraph_square.png">
+	<meta property="og:image" content="https://alere.deno.dev/alere_opengraph_square.png">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta property="twitter:domain" content="olu.deno.dev">
-	<meta property="twitter:url" content="https://olu.deno.dev/">
-	<meta name="twitter:title" content="Olu | Join the Waitlist!">
+	<meta property="twitter:domain" content="alere.deno.dev">
+	<meta property="twitter:url" content="https://alere.deno.dev/">
+	<meta name="twitter:title" content="Alere | Join the Waitlist!">
 	<meta name="twitter:description" content="Helping those with health needs on clear food product selection.">
-	<meta name="twitter:image"
-		content="https://olu.deno.dev/alere_opengraph_square.png">
+	<meta name="twitter:image" content="https://alere.deno.dev/alere_opengraph_square.png">
 
 	<meta name="theme-color" content="#FFFFFF" />
 
@@ -96,7 +94,8 @@
 <body class="w-screen h-screen flex items-center justify-center md:p-4">
 	<canvas id="canvas"></canvas>
 
-	<div class="container rounded-2xl p-4 md:p-8 md:w-[50vw] md:max-w-2xl z-10 flex flex-col gap-5 items-center justify-center">
+	<div
+		class="container rounded-2xl p-4 md:p-8 md:w-[50vw] md:max-w-2xl z-10 flex flex-col gap-5 items-center justify-center">
 		<div class="flex gap-4 items-center justify-center my-4 mt-6">
 			<svg id="logo-svg" version="1.1" width="100" height="65" viewBox="0 0 900.13001 585.83527"
 				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -113,11 +112,12 @@
 						d="m 389.5,832.41556 c -1.65,-0.22808 -7.275,-0.89962 -12.5,-1.49231 -32.73055,-3.71274 -68.20897,-14.4796 -99.57064,-30.21732 C 193.63353,758.65601 131.32123,685.50291 102.63358,595.5 97.276884,578.69422 91.980024,553.85562 90.474649,538.48305 l -0.687142,-7.01695 10.270353,-4.34337 c 23.86735,-10.0936 43.91522,-15.4769 69.41972,-18.64076 11.93037,-1.47998 49.44885,-2.05104 56.63724,-0.86206 l 3.61482,0.5979 1.67439,10.1411 c 2.69754,16.33798 9.1149,41.38915 15.48066,60.43121 34.81316,104.13753 107.17116,188.97965 195.71888,229.48677 9.54316,4.36563 28.68339,11.73534 37.39643,14.39904 1.33333,0.40762 1.33333,0.55105 0,1.29085 -2.0357,1.12952 -18.18217,4.53965 -31,6.5472 -9.97801,1.56276 -52.19116,2.91187 -59.5,1.90158 z" />
 				</g>
 			</svg>
-			<span id="typing-text" class="text-[5rem] leading-none font-bold"
-				style="font-family: &quot;Judson&quot;, serif">
-				<span class="text-transparent transition-colors duration-300">O</span><span
-					class="text-transparent transition-colors duration-300">l</span><span
-					class="text-transparent transition-colors duration-300">u</span>
+			<span id="typing-text" class="text-[5rem] leading-none font-bold" style="font-family: &quot;Judson&quot;, serif">
+				<span class="text-transparent transition-colors duration-700">A</span><span
+					class="text-transparent transition-colors duration-700">l</span><span
+					class="text-transparent transition-colors duration-700">e</span><span
+					class="text-transparent transition-colors duration-700">r</span><span
+					class="text-transparent transition-colors duration-700">e</span>
 			</span>
 		</div>
 
@@ -160,11 +160,11 @@
 		canvas.height = window.innerHeight
 
 		const colors = [
-			{ r: 150, g: 220, b: 225 },
-			{ r: 130, g: 190, b: 230 },
-			{ r: 190, g: 150, b: 230 },
-			{ r: 210, g: 170, b: 240 },
-			{ r: 120, g: 210, b: 240 },
+			{r: 150, g: 220, b: 225},
+			{r: 130, g: 190, b: 230},
+			{r: 190, g: 150, b: 230},
+			{r: 210, g: 170, b: 240},
+			{r: 120, g: 210, b: 240},
 		]
 
 		class Splash {
@@ -291,7 +291,7 @@
 					letter.classList.remove("text-transparent")
 					letter.classList.add("text-black")
 				},
-				300 + index * 700,
+				300 + index * 300,
 			)
 		})
 
@@ -321,7 +321,7 @@
 					headers: {
 						"Content-Type": "application/json",
 					},
-					body: JSON.stringify({ email: email }),
+					body: JSON.stringify({email: email}),
 				})
 
 				const data = await response.json()
